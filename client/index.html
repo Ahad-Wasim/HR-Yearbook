@@ -10,9 +10,13 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   </head>
   <body>
+    <div id='Comment-Wall'>
+    </div>
+
     <div id="app-container">
         <div id="info-window-container"></div>
-        <div id="navbar-container"></div>
+        <div id="navbar-container">
+        </div>
         <div id="page-content-container"></div>
     </div>
 
@@ -28,12 +32,16 @@
 
     <!-- Models -->
     <script src="js/models/Student.js"></script>
+    <script src="js/models/Comment.js"></script>
 
     <!-- Collections -->
     <script src="js/collections/Students.js"></script>
+    <script src="js/collections/Comments.js"></script>
 
     <!-- Views -->
+    <script src="js/views/commentWallView.js"></script>
     <script src="js/views/NavBarView.js"></script>
+    <script src="js/views/homeButtonView.js"></script>
     <script src="js/views/InfoWindowView.js"></script>
     <script src="js/views/LandingView.js"></script>
     <script src="js/views/StudentEntryView.js"></script>

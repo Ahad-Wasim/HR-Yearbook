@@ -18,6 +18,9 @@ var app = express();
 var port = process.env.PORT || 3000;
 
 // Any requests that hit a route other than /api will be served out of our client folder.
+
+
+// This finds the file on the client
 app.use(express.static(path.join(__dirname, "../client")));
 // Any prefixed that hit the /api will be directed to our router.
 app.use('/api', router);
